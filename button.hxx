@@ -87,6 +87,8 @@ public:
     bool                IsSmallSymbol() const;
     void                SetSmallSymbol(bool bSmall = true);
     virtual bool        set_property(const OString &rKey, const OString &rValue) SAL_OVERRIDE;
+    void                SetShowAccelerator (bool);
+    bool                GetShowAccelerator (void);
 };
 
 
