@@ -39,7 +39,6 @@ private:
     sal_Int32 m_nMaxWidthChars;
     sal_Int32 m_nMinWidthChars;
     Window *m_pMnemonicWindow;
-    bool mbShowAccelerator;
 
     using Control::ImplInitSettings;
     using Window::ImplInit;
@@ -81,7 +80,6 @@ public:
     virtual bool set_property(const OString &rKey, const OString &rValue) SAL_OVERRIDE;
     void set_mnemonic_widget(Window *pWindow);
     Window* get_mnemonic_widget() const { return m_pMnemonicWindow; }
-    void            SetShowAccelerator (bool);
 };
 
 class VCL_DLLPUBLIC SelectableFixedText : public Edit
