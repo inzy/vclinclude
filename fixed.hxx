@@ -81,8 +81,7 @@ public:
     virtual bool set_property(const OString &rKey, const OString &rValue) SAL_OVERRIDE;
     void set_mnemonic_widget(Window *pWindow);
     Window* get_mnemonic_widget() const { return m_pMnemonicWindow; }
-    void                SetShowAccelerator (bool);
-    bool                GetShowAccelerator (void);
+    void            SetShowAccelerator (bool);
 };
 
 class VCL_DLLPUBLIC SelectableFixedText : public Edit
